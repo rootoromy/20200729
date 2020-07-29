@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohou</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+</head>
+<body>
+    
+    <div id="hmenu">
+        
+        <label id="hopen" for="hcheck"><img src="img/hmenu.jpg" alt="メニュー" width="35" height="35"></label>
+        <label id="hclose" for="hcheck"></label>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/">Sample1</a></li>
+            <li><a href="/">Sample2</a></li>
+            <li><a href="/">Sample3</a></li>
+            <li><a href="/">Sample4</a></li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/florence.jpg"></div>
+            <div class="swiper-slide"><img src="img/charles.jpg"></div>
+            <div class="swiper-slide"><img src="img/center.jpg"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="room">
+        <img src="img/room1.jpg" alt="room1">
+        <img src="img/room2.jpg" alt="room2">
+        <img src="img/room3.jpg" alt="room3">
+
+    </div>
+
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+        effect: "flip",
+        loop: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+      })
+    </script>
+
+</body>
+</html> 
